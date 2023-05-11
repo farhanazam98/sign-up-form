@@ -1,0 +1,120 @@
+:root {
+    --off-white: #f9fafb;
+    --med: 60px;
+  }
+
+/* Myers reset */
+/* removed em */
+/* removed h3 */
+/* removed h4 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Myers Reset */
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.side {
+    width: 500px;
+    background-color: black;
+}
+
+img {
+    height: 100vh;
+    width: 500px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f9fafb;
+    justify-content: flex-end;
+}
+
+.text{
+    margin-left: var(--med);
+    margin-right: 100px;
+    margin-bottom: 80px;
+}
+
+.form-container {
+    flex-grow: 1;
+    background-color: white;
+    margin-left: var(--med);
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: inline-block;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset > div{
+    margin-right: 40px;
+}
+
+
+
+.cta {
+    flex-grow: 1;
+      background-color: var(--off-white);
+}
