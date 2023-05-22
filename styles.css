@@ -97,10 +97,13 @@ img {
 
 label {
     display: block;
+    margin-bottom: 2px;
+    font-size: small;
 }
 
 input {
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 fieldset {
@@ -116,5 +119,16 @@ fieldset > div{
 
 .cta {
     flex-grow: 1;
-      background-color: var(--off-white);
+    background-color: var(--off-white);
+    padding-left: var(--med);
+}
+
+button{
+    padding: 10px 40px;
+    margin-top: 40px;
+   
+}
+
+.cta > h4 > b {
+    color: #596D48;
 }
